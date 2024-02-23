@@ -7,7 +7,7 @@ import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 
 const posts = (await getCollection('blog')).sort(
-	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+	(b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
 ---
 
@@ -17,9 +17,10 @@ const posts = (await getCollection('blog')).sort(
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			main {
-				width: 40%;
-				background-color: transparent;
+				width: 60%;
+				background-color: ;
 				margin-bottom: 128px;
+				box-shadow: none;
 			}
 			ul {
 				display: flex;
@@ -40,20 +41,20 @@ const posts = (await getCollection('blog')).sort(
 				color: grey;
 			}
 			ul li:first-child {
-				width: 100%;
+				width: %;
 				margin-bottom: 1rem;
-				text-align: center;
+				text-align: left;
 				color: white;
 			}
 			ul li:first-child img {
 				width: 100%;
 			}
 			ul li:first-child .title {
-				font-size: 1.100rem;
+				font-size: 1.1em;
 			}
 			ul li img {
 				margin-bottom: 0.5rem;
-				border-radius: 12px;
+				border-radius: 4px;
 			}
 			ul li a {
 				display: block;
@@ -76,6 +77,10 @@ const posts = (await getCollection('blog')).sort(
 				box-shadow: ;
 			}
 			@media (max-width: 720px) {
+				main {
+					margin-top: 160px;
+					margin-bottom: 200px;
+				}
 				ul {
 					gap: 0.5em;
 				}
@@ -87,7 +92,7 @@ const posts = (await getCollection('blog')).sort(
 					margin-bottom: 0;
 				}
 				ul li:first-child .title {
-					font-size: 1.563em;
+					font-size: 1.1em;
 				}
 			}
 		</style>
