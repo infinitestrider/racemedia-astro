@@ -1,4 +1,19 @@
 ---
+title: '80'
+description: ''
+pubDate: ' 2024'
+heroImage: '/QOS-placeholder-1.jpg'
+---
+
+
+
+
+
+
+
+
+
+---
 title: 'First post'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 08 2022'
