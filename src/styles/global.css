@@ -152,6 +152,50 @@ iframe {
 	scrollbar-track-color: white;	
 }
 
+.read_more {
+     font-size: 12px;
+	 margin-left: auto;
+	 margin-right: auto;
+     background-color: #222222;
+     color: rgb(255, 255, 255) !important;
+     padding-top: 13px;
+	 padding-bottom: 13px;
+     width: 100%;
+     max-width: none;
+     text-align: center;
+     display: inline-block;
+     transition: ease-in all 0.5s;
+     font-weight: 500;
+     border-radius: 10px;
+	 text-decoration: none;
+}
+
+.read_more:hover {
+	background: #000;
+	color:  rgb(255, 255, 255) !important;
+	transition: ease-in all 0.5s;
+}
+
+.read_more-content {
+	margin-top: -23px;
+	display: none;
+}
+
+.read_more-content a {
+	color: rgb(255, 255, 255) !important;
+	text-decoration: none;
+}
+
+.read_more-content a:hover {
+	background-color: #000000;
+}
+
+.read_more-dropdown:hover .read_more-content {
+	display: inherit;
+	transition: ease-in all 1s;
+
+}
+
 @media (max-width: 720px) {
 	body {
 		font-size: 10px;
